@@ -1,0 +1,9 @@
+{
+  "$schema": "https://langgra.ph/schema.json",
+  "dependencies": ["."],
+  "graphs": {
+    "splicer": "./agent/graph.py:app"
+  },
+  "env": ".env",
+  "image_distro": "wolfi"
+}

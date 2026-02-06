@@ -1,0 +1,76 @@
+# Git
+.git
+.gitignore
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+ENV/
+.eggs/
+*.egg-info/
+*.egg
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+tests/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.cursor/
+
+# =============================================================================
+# Environment & Secrets - NEVER include in Docker image
+# =============================================================================
+.env
+.env.*
+!.env.example
+secrets/
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+credentials.json
+service-account*.json
+*-credentials.json
+gcp-credentials.json
+
+# =============================================================================
+# Terraform - Infrastructure code not needed in runtime
+# =============================================================================
+infrastructure/
+
+# =============================================================================
+# Scripts - Deployment scripts not needed in runtime
+# =============================================================================
+scripts/
+
+# Build artifacts
+dist/
+build/
+*.manifest
+*.spec
+
+# Documentation
+docs/
+*.md
+!README.md
+
+# Misc
+.DS_Store
+Thumbs.db
+*.log
+logs/
+
+# Workspaces (runtime data, created at runtime)
+workspaces/

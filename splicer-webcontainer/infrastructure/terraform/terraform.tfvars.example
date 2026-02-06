@@ -1,0 +1,39 @@
+# Example Terraform variables file
+# Copy to terraform.tfvars and customize for your environment
+#
+# Usage:
+#   cp terraform.tfvars.example terraform.tfvars
+#   # Edit terraform.tfvars with your values
+#   terraform init
+#   terraform plan
+#   terraform apply
+
+# Required: Your Google Cloud project ID
+project_id = "your-gcp-project-id"
+
+# Required: The domain for preview subdomains
+# Wildcard certificate will be created for *.{preview_domain}
+preview_domain = "preview.splicer.run"
+
+# Optional: Region where Cloud Run is deployed
+region = "us-east5"
+
+# Optional: Name of your Cloud Run service
+cloud_run_service_name = "splicer-webcontainer"
+
+# Optional: Whether to manage DNS via Cloud DNS
+# Set to true if you want Terraform to create the DNS zone and records
+# Set to false if using external DNS (Cloudflare, Route53, etc.)
+manage_dns = false
+
+# Optional: DNS zone name (only used if manage_dns = true)
+dns_zone_name = "splicer-preview"
+
+# Optional: Enable Cloud CDN for caching static assets
+enable_cdn = false
+
+# Optional: Enable Identity-Aware Proxy
+enable_iap = false
+
+# Optional: Logging sample rate (0.0 to 1.0)
+log_sample_rate = 1.0

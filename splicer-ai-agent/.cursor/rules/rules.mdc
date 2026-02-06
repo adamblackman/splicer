@@ -1,0 +1,71 @@
+---
+alwaysApply: true
+---
+
+# Splicer
+
+This project is a code-migration agent built on LangGraph. The architecture and
+agent structure are defined in **README.md**—refer to it for the canonical
+source of truth on agents, tools, and workflow.
+
+## Core Principle: Clarify Before Acting
+
+**When uncertain about intent, scope, or impact—ask the user first.**
+
+- Do not assume requirements. Ask clarifying questions for ambiguous requests.
+- Before modifying existing code, confirm you understand the exact goal.
+- If a change could affect multiple components, outline the impact and await
+  approval.
+- Prefer surgical, minimal changes over broad refactors unless explicitly
+  instructed.
+- Do not run terminal commands, simply provide them for me to run and I will provide the output.
+  Prefer uv over pip.
+
+## Refinement Focus
+
+This project is past initial implementation. Priorities are:
+
+1. **Bug fixes**: Address issues without introducing regressions.
+2. **Performance**: Optimize hot paths and reduce latency.
+3. **Code quality**: Improve readability, typing, and adherence to patterns.
+4. **Test coverage**: Fill gaps in unit/integration tests.
+5. **Documentation**: Keep inline comments and docstrings accurate.
+
+Avoid adding new features unless explicitly requested. Protect existing
+functionality.
+
+## Architecture Reference
+
+See `README.md` for the agent graph and component responsibilities:
+
+- **Agents**: `planner`, `target`, `source`, `paster`, `integrator`, `check`,
+  `check_revisor`
+- **Tools**: GitHub MCP tools (`get_file_contents`, `search_code`, `push_files`)
+  and custom tools (`copy`, `paste`, `dependency`)
+- **Structure**: `agent/` (graph + nodes), `components/` (models, tools,
+  prompts, Supabase client)
+
+Always consult `README.md` before proposing structural changes.
+
+## Code Standards
+
+- Follow existing patterns in the codebase—do not introduce new conventions
+  without discussion.
+- Prefer LangChain MCP documentation patterns (accessible via MCP).
+
+## What to Avoid
+
+- Changing files outside the current scope without explicit instruction.
+- Duplicating logic that already exists elsewhere.
+- Adding dependencies without discussion.
+- Guessing at requirements—ask instead.
+
+## LangChain Resources
+
+Use the LangChain MCP for documentation on:
+
+- LangGraph state management and graph composition
+- Tool binding and structured output
+- Checkpointing and memory
+
+When patterns are unclear, consult the MCP docs before implementing.

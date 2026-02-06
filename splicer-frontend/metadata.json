@@ -1,0 +1,5 @@
+{
+  "name": "splicer-frontend",
+  "description": "A polished landing page for Splicer with AI chat, GitHub integration, and galaxy background.",
+  "requestFramePermissions": []
+}

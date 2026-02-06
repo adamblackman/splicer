@@ -1,0 +1,57 @@
+# Git
+.git
+.gitignore
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+ENV/
+.eggs/
+*.egg-info/
+*.egg
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+tests/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.cursor/
+
+# =============================================================================
+# Environment & Secrets - NEVER include in Docker image
+# =============================================================================
+.env
+.env.*
+!.env.example
+secrets/
+*.pem
+*.key
+*.crt
+credentials.json
+service-account*.json
+
+# Build artifacts
+dist/
+build/
+*.manifest
+*.spec
+
+# Documentation (keep README.md - referenced by pyproject.toml)
+docs/
+
+# Misc
+.DS_Store
+Thumbs.db
+*.log
+logs/

@@ -1,0 +1,31 @@
+# Ignore virtual environment
+# Try multiple pattern formats for watchfiles
+\.venv
+\.venv/
+\.venv/**
+venv
+venv/
+venv/**
+env
+env/
+env/**
+\.env
+\.env/
+\.env/**
+
+# Ignore Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore test artifacts
+.pytest_cache/
+.mypy_cache/
+
+# Ignore LangGraph API state
+.langgraph_api/
+
+# Ignore IDE
+.cursor/
+.vscode/
+.idea/

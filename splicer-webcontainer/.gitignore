@@ -1,0 +1,132 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# Type checking
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# =============================================================================
+# Environment variables - NEVER COMMIT THESE
+# =============================================================================
+.env
+.env.local
+.env.*.local
+.env.development
+.env.production
+.env.staging
+*.env
+
+# =============================================================================
+# Secrets - NEVER COMMIT THESE
+# =============================================================================
+secrets/
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+credentials.json
+service-account*.json
+*-credentials.json
+
+# =============================================================================
+# Terraform - CRITICAL: State files contain sensitive data
+# =============================================================================
+# State files (may contain secrets, resource IDs, internal IPs)
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+
+# Local .terraform directories
+.terraform/
+
+# Lock file (can be committed, but excluding for safety)
+.terraform.lock.hcl
+
+# Variable files that might contain secrets
+terraform.tfvars
+*.auto.tfvars
+
+# Crash log files
+crash.log
+crash.*.log
+
+# Plan files (may contain sensitive values)
+*.tfplan
+tfplan
+
+# =============================================================================
+# OS files
+# =============================================================================
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Workspaces (runtime data)
+workspaces/
+
+# Docker
+.docker/
+
+# Coverage reports
+coverage.xml
+*.cover
+
+# =============================================================================
+# GCP
+# =============================================================================
+# Service account keys (should use workload identity instead)
+*-sa-key.json
+gcp-credentials.json
