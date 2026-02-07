@@ -1,7 +1,7 @@
 # [Splicer — AI Code Migration Agent]((https://spliceronline.com))
 
 [![Gemini 3 Hackathon](https://img.shields.io/badge/Gemini%203-Devpost-blue?style=flat&logo=google)](https://gemini3.devpost.com/)  
-**Hackathon submission:** [gemini3.devpost.com](https://gemini3.devpost.com/)
+**Hackathon submission:** [gemini3.devpost.com]([https://gemini3.devpost.com/](https://devpost.com/software/splicer-code-migration-agent))
 
 Splicer is an **AI-powered code migration agent** built with **Google Gemini 3 Pro** and **LangGraph** that moves features from one repository into another—automating the tedious work of copying, adapting, and integrating code across different codebases. Its main use case: **combining the best parts of various prototypes** into a single target repo, with correct paths, imports, dependencies, and wiring.
 
